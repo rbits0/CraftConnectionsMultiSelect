@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         CraftConnections Multi-select
 // @namespace    rbits.craft-connections-multi-select
-// @version      1.0
+// @version      1.0.1
 // @description  Multi-select for https://craftconnections.net
 // @author       rbits
-// @match        https://craftconnections.net/puzzle/*
+// @match        https://craftconnections.net/*
 // @icon         https://icons.duckduckgo.com/ip2/craftconnections.net.ico
 // @grant        GM_addStyle
 // @grant        window.onurlchange
@@ -334,14 +334,18 @@ function onCorrectGuess() {
 
 
 
-waitForKeyElements(".grid > button", () => {
-  if (!hasScriptRun) {
-    hasScriptRun = true;
-    run();
+if (window.location.href.startsWith('https://craftconnections.net/puzzle/')) {
+  waitForKeyElements('.grid > button', () => {
+    if (!hasScriptRun) {
+      hasScriptRun = true;
+      run();
 
-    listenForUrlChange();
-  }
-});
+      listenForUrlChange();
+    }
+  });
+} else {
+  listenForUrlChange();
+}
 
 
 function listenForUrlChange() {
