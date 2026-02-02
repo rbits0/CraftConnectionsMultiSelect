@@ -338,7 +338,7 @@ function onCorrectGuess() {
 
 if (
   window.location.href.startsWith('https://craftconnections.net/puzzle/') ||
-  window.location.href === 'https://craftconnections.net'
+  window.location.href === 'https://craftconnections.net/'
 ) {
   waitForKeyElements('.grid > button', () => {
     if (!hasScriptRun) {
