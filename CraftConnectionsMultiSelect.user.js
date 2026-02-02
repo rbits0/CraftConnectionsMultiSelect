@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CraftConnections Multi-select
 // @namespace    rbits.craft-connections-multi-select
-// @version      1.0.1
+// @version      1.0.2
 // @description  Multi-select for https://craftconnections.net
 // @author       rbits
 // @match        https://craftconnections.net/*
