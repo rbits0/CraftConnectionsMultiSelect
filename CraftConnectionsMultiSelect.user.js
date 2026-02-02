@@ -10,8 +10,8 @@
 // @grant        window.onurlchange
 // @license      GPL3
 // @require      https://cdn.jsdelivr.net/gh/CoeJoder/waitForKeyElements.js@v1.3/waitForKeyElements.js
-// @downloadURL  https://github.com/rbits0/CraftConnectionsMultiSelect/raw/refs/heads/main/CraftConnectionsMultiSelect.js
-// @updateURL    https://github.com/rbits0/CraftConnectionsMultiSelect/raw/refs/heads/main/CraftConnectionsMultiSelect.js
+// @downloadURL  https://github.com/rbits0/CraftConnectionsMultiSelect/raw/refs/heads/main/CraftConnectionsMultiSelect.user.js
+// @updateURL    https://github.com/rbits0/CraftConnectionsMultiSelect/raw/refs/heads/main/CraftConnectionsMultiSelect.user.js
 // ==/UserScript==
 
 'use strict';
