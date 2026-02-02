@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CraftConnections Multi-select
 // @namespace    rbits.craft-connections-multi-select
-// @version      1.0.2
+// @version      1.0.3
 // @description  Multi-select for https://craftconnections.net
 // @author       rbits
 // @match        https://craftconnections.net/*
@@ -336,7 +336,7 @@ function onCorrectGuess() {
 
 if (
   window.location.href.startsWith('https://craftconnections.net/puzzle/') ||
-  window.location.href === 'https://craftconnections.net'
+  window.location.href === 'https://craftconnections.net/'
 ) {
   waitForKeyElements('.grid > button', () => {
     if (!hasScriptRun) {
